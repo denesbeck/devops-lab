@@ -1,0 +1,11 @@
+# Using instead of ssh-copy-id
+cat ~/.ssh/id_rsa.pub | vagrant ssh node-1 -c 'cat >> ~/.ssh/authorized_keys'
+echo 'node-1 ==> Key copied!'
+cat ~/.ssh/id_rsa.pub | vagrant ssh node-2 -c 'cat >> ~/.ssh/authorized_keys'
+echo 'node-2 ==> Key copied!'
+cat ~/.ssh/id_rsa.pub | vagrant ssh node-3 -c 'cat >> ~/.ssh/authorized_keys'
+echo 'node-3 ==> Key copied!'
+cat ~/.ssh/id_rsa.pub | vagrant ssh node-4 -c 'cat >> ~/.ssh/authorized_keys'
+echo 'node-4 ==> Key copied!'
+cat ~/.ssh/id_rsa.pub | vagrant ssh node-5 -c 'cat >> ~/.ssh/authorized_keys'
+echo 'node-5 ==> Key copied!'

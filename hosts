@@ -1,0 +1,6 @@
+# In case you would use one of the nodes as control node
+192.168.56.11   node-1.local
+192.168.56.12   node-2.local
+192.168.56.13   node-3.local
+192.168.56.14   node-4.local
+192.168.56.15   node-5.local

@@ -1,0 +1,18 @@
+[control]
+localhost
+
+[proxy]
+node-1.local ansible_host=192.168.56.11 ansible_ssh_user=vagrant
+
+[webservers]
+node-2.local ansible_host=192.168.56.12 ansible_ssh_user=vagrant
+node-3.local ansible_host=192.168.56.13 ansible_ssh_user=vagrant
+node-4.local ansible_host=192.168.56.14 ansible_ssh_user=vagrant
+
+[database]
+node-5.local ansible_host=192.168.56.15 ansible_ssh_user=vagrant
+
+[webstack:children]
+proxy
+webservers
+database
