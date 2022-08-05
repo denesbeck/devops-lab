@@ -1,0 +1,5 @@
+- name: Copy hosts file
+  template:
+    src: ./templates/hosts
+    dest: /etc/hosts
+  tags: always
